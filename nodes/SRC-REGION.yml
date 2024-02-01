@@ -1,0 +1,63 @@
+steps:
+  REGION-ab4b0acd-5b98-4c03-acba-2f3cef7c29d9:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: Region data as defined by TPC-H
+      locationName: SRC
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6792d28a-3b5e-4bb8-a3eb-955944e853ec
+              stepCounter: ab4b0acd-5b98-4c03-acba-2f3cef7c29d9
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: R_REGIONKEY
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: cc86f0ce-df8f-411e-a603-db97cd7cf1ca
+              stepCounter: ab4b0acd-5b98-4c03-acba-2f3cef7c29d9
+            config: {}
+            dataType: VARCHAR(25)
+            defaultValue: ""
+            description: ""
+            name: R_NAME
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: ba7eab8f-c6a8-4bba-807d-20a526104ccf
+              stepCounter: ab4b0acd-5b98-4c03-acba-2f3cef7c29d9
+            config: {}
+            dataType: VARCHAR(152)
+            defaultValue: ""
+            description: ""
+            name: R_COMMENT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('SRC', 'REGION') }}
+      name: REGION
+      schema: ""
+      sqlType: Source
+      table: REGION
+      type: sourceInput
+    stepCounter: ab4b0acd-5b98-4c03-acba-2f3cef7c29d9
