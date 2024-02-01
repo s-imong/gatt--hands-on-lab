@@ -12,11 +12,11 @@ locations:
   SRC:
     mappingDefinitions:
       "5":
-        database: GATT
-        schema: WORKDEV
+        database: SNOWFLAKE_SAMPLE_DATA
+        schema: TPCH_SF1
       "6":
-        database: GATT_TEST
-        schema: PUBLIC
+        database: SNOWFLAKE_SAMPLE_DATA
+        schema: TPCH_SF1
   WORK:
     mappingDefinitions:
       "5":
